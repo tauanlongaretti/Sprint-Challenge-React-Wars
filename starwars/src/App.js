@@ -1,5 +1,19 @@
 import React from 'react';
 import './App.css';
+import Character from "./components/SWAPI/Character"
+import Header from "./components/SWAPI/Header"
+import Footer from "./components/SWAPI/Footer"
+import styled from 'styled-components';
+
+const WrapperDiv = styled.div`
+  font-family: sans-serif;
+  font-size: 1.8vw;
+  line-height: 1.5;
+  background-size: auto;
+  text-shadow: 1px 1px white;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: auto 5%;
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -10,9 +24,12 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
+    <WrapperDiv className="App">
       <h1 className="Header">React Wars</h1>
-    </div>
+      <Header />
+      <Character />
+      <Footer />
+    </WrapperDiv>
   );
 }
 
