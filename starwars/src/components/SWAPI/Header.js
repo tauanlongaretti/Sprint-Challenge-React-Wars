@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import HeaderCard from "./HeaderCard";
+import styled from 'styled-components';
+
+const MarginDiv = styled.div`
+  margin: 3%;
+`;
+
 
 const Header = () => {
 
   return (
-    <div>  
+    <MarginDiv>  
           <HeaderCard />
-    </div>
+    </MarginDiv>
 )};
 
 export default Header;

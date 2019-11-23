@@ -1,14 +1,14 @@
-// import React from "react";
+import React from "react";
 
-// const CharacterCard = (props) => {
-//   return (
-//     <div>
-//       <p>{props.name}</p>
-//       <p>{props.gender}</p>
-//       <p>{props.height}</p>
-//       <p>{props.mass}</p>  
-//     </div>
-//     );
-// };
+const FooterCard = () => {
+  return (
+    <div>
+      <footer>
+          <p>For information on more characters, visit the official Star Wars API.</p>
+          <small>Copyright 2019</small>
+      </footer> 
+    </div>
+    );
+};
 
-// export default CharacterCard;
+export default FooterCard;

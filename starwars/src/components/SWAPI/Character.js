@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
+import styled from 'styled-components';
+
+const DisplayDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
 
 const Character = () => {
   const [setCharacter, setCharacterState] = useState([]);
@@ -15,7 +22,7 @@ const Character = () => {
   },[]);
 
   return (
-    <div>  
+    <DisplayDiv>  
       {setCharacter.map((character, index) => {
         return ( 
           <CharacterCard
@@ -27,7 +34,7 @@ const Character = () => {
           />
         );
   })}
-    </div>
+    </DisplayDiv>
 )};
 
 export default Character;

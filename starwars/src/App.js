@@ -2,13 +2,17 @@ import React from 'react';
 import './App.css';
 import Character from "./components/SWAPI/Character"
 import Header from "./components/SWAPI/Header"
+import Footer from "./components/SWAPI/Footer"
 import styled from 'styled-components';
 
 const WrapperDiv = styled.div`
   font-family: sans-serif;
   font-size: 2vw;
-  line-height: 1.5;
+  line-height: 1.4;
   background-size: auto;
+  text-shadow: 1px 1px white;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: auto 5%;
 `;
 
 const App = () => {
@@ -24,6 +28,7 @@ const App = () => {
       <h1 className="Header">React Wars</h1>
       <Header />
       <Character />
+      <Footer />
     </WrapperDiv>
   );
 }

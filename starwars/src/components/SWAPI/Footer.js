@@ -1,29 +1,19 @@
-// import React, { useState, useEffect } from "react";
-// import axios from "axios";
-// import CharacterCard from "./CharacterCard"
+import React from 'react';
+import FooterCard from "./FooterCard"
+import styled from 'styled-components';
 
-// const Character = () => {
-//   const [setCharacter, setCharacterState] = useState([]);
-//   useEffect(() => {
-//       axios.get("https://swapi.co/api/people/1/")
-//       .then(response => {
-//           setCharacterState(response.data)
-//           console.log(response);
-//       })
-//       .catch (error => {console.log(error);
-//       })
-//   },[]);
+const MarginBottomDiv = styled.div`
+  margin-bottom: 5%;
+`;
 
-//   return (
-//     <div>
-//       <CharacterCard
-//       name = {setCharacter.name}
-//       gender = {setCharacter.gender}
-//       height = {setCharacter.height}
-//       mass = {setCharacter.mass}           
-//       />
-//     </div>
-//   );
-// };
+const Footer = () => {
+  
+  return (
+    <MarginBottomDiv>
+      <FooterCard         
+      />
+    </MarginBottomDiv>
+  );
+};
 
-// export default Character;
+export default Footer;
