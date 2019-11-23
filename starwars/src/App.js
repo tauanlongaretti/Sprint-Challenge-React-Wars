@@ -1,6 +1,15 @@
 import React from 'react';
 import './App.css';
 import Character from "./components/SWAPI/Character"
+import Header from "./components/SWAPI/Header"
+import styled from 'styled-components';
+
+const WrapperDiv = styled.div`
+  font-family: sans-serif;
+  font-size: 2vw;
+  line-height: 1.5;
+  background-size: auto;
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,10 +20,11 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
+    <WrapperDiv className="App">
       <h1 className="Header">React Wars</h1>
+      <Header />
       <Character />
-    </div>
+    </WrapperDiv>
   );
 }
 
