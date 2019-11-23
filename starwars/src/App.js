@@ -7,8 +7,8 @@ import styled from 'styled-components';
 
 const WrapperDiv = styled.div`
   font-family: sans-serif;
-  font-size: 2vw;
-  line-height: 1.4;
+  font-size: 1.8vw;
+  line-height: 1.5;
   background-size: auto;
   text-shadow: 1px 1px white;
   background-color: rgba(255, 255, 255, 0.5);
